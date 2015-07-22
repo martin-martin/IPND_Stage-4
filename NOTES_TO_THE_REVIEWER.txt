@@ -1,0 +1,93 @@
+PLEASE READ THIS FILE COMPLETELY BECAUSE IT CONTAINS IMPORTANT INFORMATION AND EXPLANATIONS ABOUT WHAT I WAS DOING IN THIS PROJECT AND MIGHT ANSWER SOME POSSIBLE QUESTIONS.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTES TO THE REVIEWER (THIRD SUBMISSION)
+
+Hi!
+
+Thank you for your feedback : )
+
+Regarding the code comments: I understand that I'm not really doing a very good job here, but for me these comments are also some kind of notes for myself. Writing them out like this makes me also rethink and check whether I understood what I am doing. So they might not be good practice, but I think I'll stick to it for a little while longer. When I'll be understanding better what I do and why, then I will also change my focus to make the comments communicate to a potential larger audience than only myself :)
+
+I went to change my code considering your other suggestions. That for-loop construct is pretty impressive! :D Thanks for telling me about it. I went to check it out on a separate example, and it works completely fine. I do find the index issues when using for loops a bit annoying, so this will give me a good thing to apply and learn to fully understand and will probably save me quite some troubles in the future. Thanks!
+
+About the magic number: Yes, I understand that this was a mistake that had been overlooked, and I think it's fair that I go to repair it. I defined the time as time_delay = .1 and then passed it into the function time.sleep(time_delay)
+Hope I understood correctly and removed the magic number like this.
+
+Thanks also for the tip about skipping that for loop and unnecessary dict creation, that I can indeed just skip by passing the "pages" value to my template.
+Made it a bunch easier (and also easier to understand).
+
+Considering the ndb.Property -  I didn't find this repeated=True attribute when I was researching on how to handle the fact that I'm not only passing strings, so it was interesting to get this tip. I tried it, and it worked (as you suggested) for the list "topics". However, for "content" (which is a dict) it didn't work, so I left the PickleProperty, strange as it may sound, but functional. Still this is a little improvement towards easier understandability! :)
+
+So, thanks again for your feedback, I got some learnings from it and this always makes me happy :)
+I wish you a good time.
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+NOTES TO THE REVIEWER (SECOND SUBMISSION)
+
+Hello!
+
+I've gone to repair the mistakes:
+I removed the three bits of commented-out code in the CSS (I usually like to keep this bit in, because it allows me to switch on and off the red box lines for viewing the structure of my pages, but okay, it's mentioned like this in the rubric so I understand).
+
+I've also added a clause for validating user input: if the "name" field is filled only by blanks, the form doesn't submit and an error message gets displayed directly on the site.
+I don't want to force the users to write inputs into the textarea (content) fields. I want to keep it possible for them to leave these fields blank - so I restricted the validation regarding blanks to the "name" field.
+
+Since you will most probably be a new person reviewing this project, I'd like to say that I'd be very glad to receive also more critical feedback than in my last review. You don't have to flunk me ; ) but I'd be really interested to learn more from a person who has more experience than me.
+I am really happy if the feedback can point me into new directions and make me learn things about steps I can take to go forward and become better!
+
+So if there is something that you know or see, please tell me about it!
+
+Thanks (and again: if you feel like filling the form page, I'd find this very sweet : )
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+FEEDBACK FOR THE REVIEWER (FIRST SUBMISSION)
+
+Hi.
+I gave you only two stars for your review, because I didn't actually learn much from reading it : /
+
+Except for the question about validating a field that is only filled by blanks (thanks for that!), you are not pointing me into directions where I could improve myself.
+
+At first I was quite happy to see the review page, because I saw that there are 21 comments in the code section!! - but when I went to look at them, I realized that they were pretty much all the same:
+You mainly gave me comments that were acknowledging something that I did (more or less) good already, and a lot of them were even doubles and triples, re-stating something you had already written before.
+
+So all in all there was very little new information that I gained from your review, and this is not good feedback in my opinion. : /
+(I was also a bit unhappy about this, that since you left so many comments, it felt a bit as if you tried to make it appear that there is a lot of content to your feedback, but in fact there wasn't. This contradiction of expectations and my actual gain contributed to the fact that it didn't feel so good. If there's not much you have to say, then maybe it's more fair to leave also only a few comments.)
+
+Thanks, though, for congratulating me to my project as a whole, I felt that comment quite sincere.
+I'm sorry that I'm not giving you a better feedback, because I actually think that you are a nice person, but I believe it's important to get to know what benefits or shortcomings do one's own actions actually have.
+There is always an image of the effects that one's own actions have, but one rarely gets to see how they really do out in the world, or if one does get to see, it's often difficult to accept criticism.
+
+I hope you can maybe take my feedback as a hint on how you can improve your reviews, so that they will have a more empowering effect on the students that receive them.
+
+Thanks for taking the time to look at my project and I wish you good luck in the future!
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+NOTES TO THE REVIEWER (FIRST SUBMISSION)
+
+Hello Dear Reviewer!
+
+I have created this page using jinja2 templates and deployed it on google app engine.
+
+There's something important to note, that might cause confustion otherwise:
+MY CONTENT (MY NOTES) ARE NOT IN THE LOCAL WEBPAGE.
+---------------------------------------------------
+instead I have entered them as input to my page on appspot (because I made collecting these informations the topic of my project, and chose to present my own notes in the same way. my notes are the first (lowest down) submission on this page that collects all the inputs as datastore objects: http://stage-4-996.appspot.com/collection )
+
+In case there'd be some questions about the validity of this, I also added the same notes in the notes_stage_4.txt file into the Project repository - but this is only for the sake of completeness. Do read them online.
+
+Apart from this, I'd like to say that I'm always excited to learn more, so if there are any tips that you have on how I can improve myself, please tell me! I'm here to learn and you are the person who gets to see my (beginner's) code, and you are the one who can help me spot mistakes and learn more, and new and better ways of achieving some functionalities!
+
+It's a great and honorful task to give feedback, and I'd be very glad if you'd give me a thorough one.
+
+Thanks in advance and I hope you'll also have a nice time reviewing, and maybe find something to smile about a bit in my submission. : )
+(If you feel like filling the forms, please do!!!)

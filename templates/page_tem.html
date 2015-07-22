@@ -1,0 +1,28 @@
+{% extends "main_tem.html" %}
+{% block style %}{% if css=="colourful" %}style_1.css{% endif %}{% if css=="minimal" %}style_2.css{% endif %}{% endblock style %}
+{% block title %}{{name}}'s page{% endblock title %}
+{% block content %}
+	<h1>
+		{{smile}} {{name}}'s page {{smile}}
+	</h1>
+	<hr>
+{% for key, value in content.items() %}
+	<div>
+		<h2>{{key}}</h2>
+		<p>{{value}}</p>
+	</div>{% endfor %}{% endblock content %}
+{% block footer %}
+	<div>
+		about IPND stage 4
+	</div>
+	<div>
+		<form method="get" action="/collection">
+			<label>
+				{{name}} made this. others made
+				<input type="submit" value="these">
+			</label>
+		</form>
+	</div>
+	<div>
+		{{date}}
+	</div>{% endblock footer %}

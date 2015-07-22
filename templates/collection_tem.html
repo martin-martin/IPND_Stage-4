@@ -1,0 +1,60 @@
+{% extends "main_tem.html" %}
+{% block title %}Stage 4 - Collection{% endblock title %}
+{% block style %}style.css{% endblock style %}
+{% block content %}
+{% for page in pages %}
+	<br>
+	<br>
+	<h1>
+		{{page["smile"]}} {{page["name"]}}'s page {{page["smile"]}}
+	</h1>
+	<hr>
+	{% for key, value in page["content"].items() %}
+	<div>
+		<h2>
+			{{key}}
+		</h2>
+		<p>
+			{{value}}
+		</p>
+	</div>
+	{% endfor %}
+	<hr>
+	<div class="info">
+		<div>
+			CSS-choice: {{page["css"]}}
+		</div>
+		<div>
+			{{page["name"]}} made this.
+		</div>
+		<div>
+			{{page["date"]}}
+		</div>
+	</div>
+	<br>
+	<br>
+{% endfor %}
+	<p>
+		<strong>Note about this page:</strong> This page is a collection from user inputs to my forms. The first and oldest one, that is the one just above this text, is fed by my own Notes about Stage 4 and represents the content part of my submission. It might be the only one during the time of reviewing, but I intend to post a link to this page on the forum, so it might fill up a bit. You are very welcome to fill the forms, submit your thoughts and be part of building this mini-database : )
+	</p>
+	<div class="center">
+		<form method="get" action="/">
+			<input type="submit" value="Return to Form Page">
+		</form>
+	</div>
+{% endblock content %}
+{% block footer %}
+	<div class="info">
+		stage 4
+	</div>
+	<div class="info">
+		<form action="/example">
+			<label>
+				martinmade
+			</label>
+		</form>
+	</div>
+	<div class="info">
+		july 2015
+	</div>
+{% endblock footer %}

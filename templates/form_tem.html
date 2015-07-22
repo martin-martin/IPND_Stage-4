@@ -1,0 +1,60 @@
+{% extends "main_tem.html" %}
+{% block content %}<header>
+	<p>
+		Clicking "submit" after filling these forms will auto-generate a wepage with your content :)
+	</p>
+	<h1>
+		Write some short Notes on what you learned in Stage 4
+	</h1>
+	<p>
+		Just fill those that you feel like filling. But please do enter a name (not only blanks!) and select a style.
+	</p>
+	{% if blank == True %}<div class="error"><p>Sorry, blanks don't count in the "name" field!</p></div>{% endif %}
+</header>
+<form method="post" action="/userpage">
+	<label>
+		your name (or alias):
+		<input type="text" name="name" value="no_name">
+	</label>
+	<br>
+	<br>
+	<label>
+		which emoticon do you like the most?
+		<select name="smile">
+			<option>:-)</option>
+			<option>: )</option>
+			<option>= )</option>
+			<option>(＾ｖ＾)</option>
+			<option>&gt;^_^&lt;</option>
+			<option>:-D</option>
+			<option>(*v*)</option>
+			<option>=^.^=</option>
+			<option>&lt;:3)~</option>
+			<option>O.o</option>
+			<option>B-)</option>
+			<option>*_*</option>
+			<option>;-)</option>
+			<option>_(._.)_</option>
+		</select>
+	</label>
+	<br>
+	<br>
+	{% for t in topics %}<label>
+		{{t}}:<br>
+		<textarea name="content" rows="5" cols="125"></textarea>
+	</label>
+	<br>{% endfor %}
+	<br>
+	<p>
+		choose your style:
+	</p>
+	<label>
+		<input type="radio" name="css" value="colourful"> colourful
+	</label>
+	<label>
+		<input type="radio" name="css" value="minimal"> minimal
+	</label>
+	<div class="center">
+		<input type="submit">
+	</div>
+</form>{% endblock content %}

@@ -1,0 +1,35 @@
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -ms-box-sizing: border-box;
+   box-sizing: border-box;
+}
+
+body {
+    width: 1000px;
+    margin: auto;
+    border-style: solid;
+    border-color: red;
+    border-radius: 25px;
+    padding: 50px;
+}
+
+h1 {
+  background-color: lightgray;
+}
+
+header,
+h1,
+.center {
+    text-align: center;
+}
+
+.error {
+    color: red;
+}
+
+footer,
+.info {
+    display: flex;
+    justify-content: space-between;
+}
